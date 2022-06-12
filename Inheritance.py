@@ -37,6 +37,14 @@ class Wizard(Fighters):
     def attack(self):
         print(f'Wizard {self.name} is about to attack with power: {self.power}')
 
+# Multiple Inheritance
+class HybridBorg(Wizard,Witch):
+    def __init__(self, name, power,email):
+        super().__init__(name, power,email)
+
+hb1 = HybridBorg('Sumo','Pehalwan','123@email.com')
+hb1.attack()
+
 wizard1 = Wizard("Kaka", "Bad force")
 witch1 = Witch('Sara','Magic Eye',"sara@gmail.com")
 
