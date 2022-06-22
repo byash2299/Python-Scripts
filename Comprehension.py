@@ -3,7 +3,7 @@
 my_list = [num for num in range(1,11)]
 print(my_list)
 
-new_list = [x**2 for x in range(2,20) if x**2 % 2 == 0]
+new_list = [x**2 for x in range(1,12) if x % 2 != 0]
 print(new_list)
 
 # Set comprehension is same as list comprehension
